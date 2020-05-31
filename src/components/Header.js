@@ -5,11 +5,10 @@ import React from 'react';
 // Using "desestruturação"
 // export default function Header({ title }) {
 // children: Content received on the parent tag
-export default function Header({ title, children }) {
+export default function Header({ title }) {
   return (
     <header>
       <h1>{title}</h1>
-      { children }
     </header>
   )
 }
