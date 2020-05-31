@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function Header() {
+// props to receive properties
+// export default function Header(props) {
+// Using "desestruturação"
+// export default function Header({ title }) {
+// children: Content received on the parent tag
+export default function Header({ title, children }) {
   return (
     <header>
-      <h1>ReactJS</h1>
+      <h1>{title}</h1>
+      { children }
     </header>
   )
 }
